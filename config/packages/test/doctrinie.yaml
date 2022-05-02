@@ -1,0 +1,13 @@
+doctrine:
+  orm:
+    dql:
+      datetime_functions:
+        HOUR: DoctrineExtensions\Query\Sqlite\Hour
+        DAY: DoctrineExtensions\Query\Sqlite\Day
+        DATE: DoctrineExtensions\Query\Sqlite\Date
+        WEEK: DoctrineExtensions\Query\Sqlite\Week
+        MONTH: DoctrineExtensions\Query\Sqlite\Month
+        YEAR: DoctrineExtensions\Query\Sqlite\Year
+        MONTHNAME: App\Doctrine\DoctrineExtensions\Query\Sqlite\MonthName
+        DAYNAME: App\Doctrine\DoctrineExtensions\Query\Sqlite\DayName
+        DATE_FORMAT: DoctrineExtensions\Query\Sqlite\DateFormat

@@ -1,0 +1,10 @@
+App\Entity\Hotel:
+  hotel_{1..10}:
+    name: '<name()>'
+
+App\Entity\Review:
+  review_{1..1000}:
+    hotel: '@hotel*'
+    score: '<numberBetween(1, 5)>'
+    comment: '<text(1000)>'
+    createdDate: '<dateTimeBetween("-30 years", "now")>'
